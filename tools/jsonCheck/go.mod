@@ -1,4 +1,4 @@
-module git.q8s.co/pschlump/qr_svr2/tools/jsonCheck
+module github.com/pschlump/qr_svr2/tools/jsonCheck
 
 go 1.18
 

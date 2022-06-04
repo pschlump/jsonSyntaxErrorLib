@@ -1,4 +1,4 @@
-module git.q8s.co/pschlump/qr_svr2/tools/jsonStatus
+module github.com/pschlump/qr_svr2/tools/jsonStatus
 
 go 1.18
 

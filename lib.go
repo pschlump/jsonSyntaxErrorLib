@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/pschlump/godebug"
+	"github.com/pschlump/dbgo"
 )
 
 // HintType is a single hint on what might have cause the error
@@ -83,7 +83,7 @@ func GenerateSyntaxError(js string, err error) (rv string) {
 	}
 
 	if *Debug {
-		fmt.Printf("AT: %s - start=%d end=%d len(js)=%d\n", godebug.LF(), start, end, len(js))
+		fmt.Printf("AT: %s - start=%d end=%d len(js)=%d\n", dbgo.LF(), start, end, len(js))
 	}
 
 	line, pos := strings.Count(js[:start], "\n"), int(syntax.Offset)-start-1

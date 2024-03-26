@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"github.com/pschlump/dbgo"
-	"github.com/pschlump/godebug"
 	"github.com/pschlump/mapstructure"
 )
 
@@ -45,7 +44,7 @@ func t1() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("%s\n", godebug.SVarI(result))
+	fmt.Printf("%s\n", dbgo.SVarI(result))
 
 	// Output:
 	/*
@@ -100,10 +99,10 @@ func t2() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("Unused keys: %s\n", godebug.SVarI(md.Unused))
+	fmt.Printf("Unused keys: %s\n", dbgo.SVarI(md.Unused))
 	// Output:
 	// Unused keys: []string{"email"}
-	fmt.Printf("Matched Data: %s\n", godebug.SVarI(result))
+	fmt.Printf("Matched Data: %s\n", dbgo.SVarI(result))
 	// Output:
 	//
 }
@@ -160,10 +159,10 @@ func copy_to_struct(from map[string]string, result interface{}) (err error) {
 		return
 	}
 
-	fmt.Printf("Unused keys: %s\n", godebug.SVarI(md.Unused))
+	fmt.Printf("Unused keys: %s\n", dbgo.SVarI(md.Unused))
 	// Output:
 	// Unused keys: []string{"email"}
-	fmt.Printf("Matched Data: %s\n", godebug.SVarI(result))
+	fmt.Printf("Matched Data: %s\n", dbgo.SVarI(result))
 	// Output:
 	//
 

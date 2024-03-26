@@ -1,6 +1,6 @@
 module github.com/pschlump/qr_svr2/tools/jsonCheck
 
-go 1.18
+go 1.22.0
 
 require (
 	github.com/pschlump/check-json-syntax v1.0.3

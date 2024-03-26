@@ -3,7 +3,7 @@ module github.com/pschlump/jsonSyntaxErrorLib/tools/jwtParse
 go 1.22.0
 
 require (
-	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/pschlump/ReadConfig v1.0.8
 	github.com/pschlump/dbgo v1.0.9
 )

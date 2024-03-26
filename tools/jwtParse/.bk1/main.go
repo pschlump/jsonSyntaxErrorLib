@@ -6,12 +6,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/golang-jwt/jwt/v5"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/pschlump/ReadConfig"
 	"github.com/pschlump/dbgo"
 )
-
-// "github.com/dgrijalva/jwt-go"
 
 /*
 3. Add in code that parses jwttoken (../tools/jwtParse/main)
@@ -74,7 +72,7 @@ func main() {
 
 type JwtClaims struct {
 	AuthToken string `json:"auth_token"`
-	jwt.RegisteredClaims
+	jwt.StandardClaims
 }
 
 func ParseAuthToken(jwtToken string) (AuthToken string) {
